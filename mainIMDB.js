@@ -293,7 +293,5 @@ movie10.isMCU = true;
 movie10.mainCharacterName = "Diana";
 movie10.producer = "Marc Shaiman";
 movie10.distributor = "Warner Bros., DC Entertainment, Atlas Entertainment";
-
-let myIMDB = new IMDB([movie9, movie8]);
-
+let myIMDB = new IMDB([movie1,movie2, movie3, movie4, movie5, movie6, movie7, movie8, movie9, movie10]);
 console.log(myIMDB);
