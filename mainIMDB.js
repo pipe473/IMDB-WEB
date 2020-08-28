@@ -1,3 +1,62 @@
+const profesiones = {
+    actor = "Actor",
+    guionista = "Guionista",
+    director = "Director",
+  }
+  
+class Professional {
+    constructor(picture,name, age, genre, weight, height, hairColor, eyeColor,race,isRetired, nationality, oscars, profession, profesiones) {
+      this.name = name;
+      this.age = age;
+      this.genre = genre;
+      this.weight = weight;
+      this.height = height;
+      this.hairColor = hairColor;
+      this.eyeColor = eyeColor;
+      this.race = race;
+      this.isRetired = isRetired;
+      this.nationality = nationality;
+      this.oscasrsNumber = oscarsNumber;
+      this.profession = profession;
+      this.picture = picture;
+    }
+  
+   
+    showAttributes() {
+      console.log(`${this.picture} \n Name: ${this.name} \n Age: ${this.age} \n Genre: ${this.genre} \n Weight: ${this.weight} \n Height: ${this.height} \n Hair Color: ${this.hairColor} \n Eye Color: ${this.eyeColor} \n Race: ${this.race} \n Is Retired? ${this.isRetired} \n Nationality: ${this.nationality} \n Oscars Number: ${this.oscasrsNumber} \n Profession: ${this.profession}\n`);
+    }
+  }
+
+class Movie {
+    //Implementacion del método constructor
+    constructor(picture, title, releaseYear, nacionality, genre) {
+      this.title = title;
+      this.releaseYear = releaseYear;
+      this.nacionality = nacionality;
+      this.genre = genre;
+      this.picture = picture;
+    }
+  
+    showMoviesInfo() {
+      // Muestra todos los datos de las películas
+      console.log(
+        `Picture: ${this.picture} \n Titulo:  ${this.title} \n  Año de Lanzamiento:  ${this.releaseYear}`
+      );
+  
+      for (
+        let i = 0;
+        i < this.actors.length;
+        i++ // Creamos un buclee porque el atributo actores es un ARRAY DE OBJETOS DE CLASE PROFESSIONAL. De esta manera podemos acceder al atributo nombre de cada uno.
+      ) {
+        console.log(this.actors[i].showAttributes()); // se pueden sacar todos los atributos llamando al método showAttributes()
+      }
+  
+      console.log(
+        `Nacionalidad: ${this.nacionality} \n  Director: ${this.director.name} \n Guionista: ${this.writer.name} \n  Idioma: ${this.language} \n Plataforma: ${this.platform} \n Is MCU?: ${this.isMCU} \n Nombre del protagonista: ${this.mainCharacterName} \n Productor: ${this.producer} \n Productora: ${this.distributor} \n Género: ${this.genre} \n`
+      );
+    }
+  };
+
 // Crear un fichero main que muestre todos los datos de las películas.
 import {Movie} from "./movie";
 import {Professional} from "./professional";
@@ -5,10 +64,10 @@ import {profesiones} from "./professional";
 ​
 // Crear un fichero main pra probar esta clase creando un objeto de tipo IMDB.
 //Importamos antes la clase IMDB que hemos creado y también las clases anteriores, Movie, Professional y profesiones, porque serán datos que estén dentro de nuestro objeto IMDB ahora.
-import { IMDB } from "./IMDB";
-import { Movie } from "./movie";
-import { Professional } from "./professional";
-import { profesiones } from "./professional";
+// import { IMDB } from "./IMDB";
+// import { Movie } from "./movie";
+// import { Professional } from "./professional";
+// import { profesiones } from "./professional";
 ​
 //Nuestro objeto IMDB es un array de OBJETOS DE LA CLASE MOVIE. Tenemos que crear primero Movies para crearlo después. 
 //La clase Movie (y por tanto todos los objetos deesta clase) tenía objetos de clase Professional componiendo algunos de sus atributos. 
@@ -290,4 +349,4 @@ let myIMBD = new IMDB (arrFilms);
 console.log(myIMBD.peliculas);
 ​
 ​
-readLine.question ("Título: " + this.title + "Año de lanzamiento: " + "Nacionalidad: " +  "Género: ")
+readLine.question ("Título: " + this.title + "Año de lanzamiento: " + "Nacionalidad: " +  "Género: ");
