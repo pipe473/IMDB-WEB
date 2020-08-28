@@ -1,7 +1,6 @@
-import { Professional } from "./professional";
-import { profesiones } from "./professional";
 
-module.exports = class Movie {
+
+class Movie {
   //Implementacion del método constructor
   constructor(picture, title, releaseYear, nacionality, genre) {
     this.title = title;

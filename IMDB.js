@@ -1,6 +1,4 @@
 const fs = require("file-system");
-import{Movie} from './movie';
-import{ profesiones } from "./professional";
 
 module.exports = class IMDB {
 
