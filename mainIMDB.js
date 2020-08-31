@@ -307,13 +307,12 @@ showMovie = (num) => {
 
 // FUNCION DEL FORMULARIO
 
-$(function(){
-
-  $("#boton-send").click(function(){
-    let peliNueva = new Movie ($("#input-title").val(), $("#input-release").val(), $("#input-nationality").val(), $("#input-genre").val(), $("#input-url").val())
-    myIMDB.peliculas.push(peliNueva)
-    $("#fotoNueva").attr("src", myIMDB.peliculas[10].picture);
-    $("#nuevoDiv").show();
-  });
-});
+// $(function () {
+//   $("#boton-send").click(function(){
+//     let peliNueva = new Movie ($("#input-title").val(), $("#input-release").val(), $("#input-nationality").val(), $("#input-genre").val(), $("#input-url").val())
+//     myIMDB.peliculas.push(peliNueva)
+//     $("#fotoNueva").attr("src", myIMDB.peliculas[10].picture);
+//     $("#nuevoDiv").show();
+//   });
+// });
 
