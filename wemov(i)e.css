@@ -1,0 +1,78 @@
+#comenzar {
+    width: 150px;
+    color: #FFE484 !important;
+    font-weight: bold;
+    background-color: #434343 !important;
+    border-color: #ffe48457 !important;
+    border-radius: 50px;
+    margin-top: 250px;
+    width: 150px;
+    height: 150px;
+    margin-left: 500px;
+}
+
+#test {
+    background-image: url(./img/istockphoto-970784800-170667a.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+} 
+
+#prueba{
+    background-color: aquamarine;
+    width: 500px;
+    height: 400px;
+    margin-left: 250px;
+    margin-top: 50px;
+}
+
+body 
+{
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+
+}
+
+
+.navbar  
+{
+    background-image: linear-gradient(to right, #434343 0%, black 100%) !important;
+}
+    
+.navbar-brand 
+{
+    color: #FFE484 !important;
+    font-family: fantasy;
+    font-size: 40px;
+    margin-left: 40px;
+}
+
+
+#container 
+{
+    margin-left: 140px;
+    margin-top: 15px;
+}
+
+.card 
+{
+    margin-bottom: 50px;
+    height: 22em;
+    margin-left: 3px;
+    background-color: rgba(48, 49, 46, 0.144);
+}
+
+
+.card-text
+{
+    font-size: 12px;
+}
+
+.btn {
+    width: 150px;
+    color: #FFE484 !important;
+    font-weight: bold;
+    background-color: #434343 !important;
+    border-color: #ffe48457 !important;
+    border-radius: 5px;
+}
