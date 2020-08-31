@@ -297,9 +297,23 @@ let myIMDB = new IMDB([movie1,movie2, movie3, movie4, movie5, movie6, movie7, mo
 // console.log(myIMDB);
 
 
+// FUNCION DE MOSTRAR DESCRIPCION DE LAS PELICULAS
+
 showMovie = (num) => {
   let show = (`<img src="${myIMDB.peliculas[num].picture}" width="150" /> <h5>Título:</h5> ${myIMDB.peliculas[num].title} <h5>Año:</h5> ${myIMDB.peliculas[num].releaseYear}  <h5>País:</h5> ${myIMDB.peliculas[num].nacionality} <h5>Género:</h5>  <i>${myIMDB.peliculas[num].genre}</i> `);
   console.log(show);  
   document.getElementById("mostrarPelis").innerHTML = show;
 }
+
+// FUNCION DEL FORMULARIO
+
+$(function(){
+
+  $("#boton-send").click(function(){
+    let peliNueva = new Movie ($("#input-title").val(), $("#input-release").val(), $("#input-nationality").val(), $("#input-genre").val(), $("#input-url").val())
+    myIMDB.peliculas.push(peliNueva)
+    $("#fotoNueva").attr("src", myIMDB.peliculas[10].picture);
+    $("#nuevoDiv").show();
+  });
+});
 
