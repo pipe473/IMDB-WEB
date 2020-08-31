@@ -6,8 +6,8 @@ class IMDB {
 }
   
 class Professional {
-    constructor(name, age, genre, weight, height, hairColor, eyeColor,race,isRetired, nationality, oscarsNumber, profession) {
-      // this.picture = picture;
+    constructor(picture, name, age, genre, weight, height, hairColor, eyeColor,race,isRetired, nationality, oscarsNumber, profession) {
+      this.picture = picture;
       this.name = name;
       this.age = age;
       this.genre = genre;
@@ -38,14 +38,14 @@ class Movie {
 
 //Película 1:
 //Creamos objetos de clase Professional para añadirlos más tarde en el atributo actors al objeto Movie.
-let actor1Movie1 = new Professional ("Clark Gable", 59, "Masculino", 80, 1.85, "marrón", "gris", "americana", true, "estadounidense", 1, "Actor");
-let actor2Movie1 = new Professional ("Vivien Leigh", 53, "Femenino", 55, 1.57, "negro", "miel", "india", true, "británica", 2, "Actor");
-let actor3Movie1 = new Professional ("Leslie Howard", 50, "Masculino", 73, 1.78,"rubio", "marrón", "caucásica", true, "británica", 0, "Actor");
-let actor4Movie1 = new Professional("Olivia de Havilland", 104, "Femenino", 57, 1.60, "pelirrojo", "verde", "asiática", true, "Francesa", 1, "Actor");
-let actorRevelacion = new Professional ("Felipe Bedoya", 32, "Masculino", 80, 1.75, "negro", "marrón", "developer aburguesada", false, "boliviana", 2, "Actor");
+let actor1Movie1 = new Professional ("./img/P1 - lo que el viento se llevó/Clark_Gable_-_publicity.jpg", "Clark Gable", 59, "Masculino", 80, 1.85, "marrón", "gris", "americana", true, "estadounidense", 1, "Actor");
+let actor2Movie1 = new Professional ("./img/P1 - lo que el viento se llevó/Vivien_Leigh_Scarlet.jpg", "Vivien Leigh", 53, "Femenino", 55, 1.57, "negro", "miel", "india", true, "británica", 2, "Actor");
+let actor3Movie1 = new Professional ("./img/P1 - lo que el viento se llevó/Leslie_Howard_GWTW.jpg", "Leslie Howard", 50, "Masculino", 73, 1.78,"rubio", "marrón", "caucásica", true, "británica", 0, "Actor");
+let actor4Movie1 = new Professional("./img/P1 - lo que el viento se llevó/220px-Olivia_de_Havilland_1936.jpg", "Olivia de Havilland", 104, "Femenino", 57, 1.60, "pelirrojo", "verde", "asiática", true, "Francesa", 1, "Actor");
+// let actorRevelacion = new Professional ("Felipe Bedoya", 32, "Masculino", 80, 1.75, "negro", "marrón", "developer aburguesada", false, "boliviana", 2, "Actor");
  
 // Ahora creamos el array de objetos professional que incluye nuestros actores y los incluimos.
-let actoresMovie1 = [actor1Movie1, actor2Movie1, actor3Movie1, actor4Movie1, actorRevelacion];
+let actoresMovie1 = [actor1Movie1, actor2Movie1, actor3Movie1, actor4Movie1];
 
 // Creamos los objetos de la clase Professional Director (con atributo profesión director) y Escritor (con atributo profesión guionista) para incluirlos también como atributos de nuestro objeto Movie.
 let escritorMovie1 = new Professional ("Sidney Howard", 48,"Masculino", 76, 1.80, "rubio", "marrón", "americana", true, "estadounidense", 1, "Guionista");
@@ -91,9 +91,9 @@ movie2.distributor = "Sony Pictures Entertainment";
 
 //Película 3: 
 //Creamos objetos de clase Professional para añadirlos más tarde en el atributo actors al objeto Movie.
-let actor1Movie3 = new Professional ("Tom Hanks", 64, "Masculino", 86, 1.83, "castaño ceniza", "azul", "americana", false, "estadounidense", 1, "Actor");
-let actor2Movie3 = new Professional ("Robin Wright", 54, "Femenino", 59, 1.68, "rubio", "azul", "americana", false, "estadounidense", 0, "Actor");
-let actor3Movie3 = new Professional ("Gary Sinise", 65, "Masculino", 70, 1.75, "marrón", "gris", "americana", true, "estadounidense", 0, "Actor");
+let actor1Movie3 = new Professional ("./img/P3-Forrest gump/Tom_Hanks_face.jpg", "Tom Hanks", 64, "Masculino", 86, 1.83, "castaño ceniza", "azul", "americana", false, "estadounidense", 1, "Actor");
+let actor2Movie3 = new Professional ("/img/P3-Forrest gump/Robin_Wright_Cannes_2017.jpg", "Robin Wright", 54, "Femenino", 59, 1.68, "rubio", "azul", "americana", false, "estadounidense", 0, "Actor");
+let actor3Movie3 = new Professional ("/img/P3-Forrest gump/Gary_Sinise_2011_(cropped).jpg", "Gary Sinise", 65, "Masculino", 70, 1.75, "marrón", "gris", "americana", true, "estadounidense", 0, "Actor");
 
 //Creamos el array de objetos professional que incluye nuestros actores para añadirlo en el atributo actores de nuestro objeto Movie. 
 let actoresMovie3 =  [actor1Movie3, actor2Movie3, actor3Movie3];
@@ -116,11 +116,11 @@ movie3.distributor = "Paramount Pictures";
 
 //Película 4:
 //Creamos objetos de clase Professional para añadirlos más tarde en el atributo actors al objeto Movie.
-let actor1Movie4 = new Professional ("Kristen Bell", 40, "Femenino", 50, 1.55, "rubio", "verdes", "americana", false, "estadounidense", 0, "Actor");
-let actor2Movie4 = new Professional ("Indina Menzel", 49, "Femenino", 52, 1.63, "castaño", "amarrón", "americana", false, "estadounidense", 0, "Actor");
-let actor3Movie4 = new Professional ("Jonathan Groff", 35, "Masculino", 77, 1.80, "castaño claro", "verde", "americana", false, "estadounidense", 0, "Actor");
-let actor4Movie4 = new Professional ("Josh Gad", 39, "Masculino", 72, 1.69, "castaño oscuro", "marrón", "americana", false, "estadounidense", 0, "Actor");
-let actor5Movie4 = new Professional ("Santino Fontana", 38, "Masculino", 81, 1.87, "castaño", "azul", "americana", false, "estadounidense", 0, "Actor");
+let actor1Movie4 = new Professional ("./img/P4-Frozen/220px-Kristen_Bell_Frozen_premiere_2013_(cropped).jpg", "Kristen Bell", 40, "Femenino", 50, 1.55, "rubio", "verdes", "americana", false, "estadounidense", 0, "Actor");
+let actor2Movie4 = new Professional ("./img/P4-Frozen/Idina_Menzel_Defense.gov_Crop.png", "Indina Menzel", 49, "Femenino", 52, 1.63, "castaño", "amarrón", "americana", false, "estadounidense", 0, "Actor");
+let actor3Movie4 = new Professional ("./img/P4-Frozen/Jonathan_Groff_at_Outfest_2013.jpg", "Jonathan Groff", 35, "Masculino", 77, 1.80, "castaño claro", "verde", "americana", false, "estadounidense", 0, "Actor");
+let actor4Movie4 = new Professional ("./img/P4-Frozen/josh_gad_1011.jpg","Josh Gad", 39, "Masculino", 72, 1.69, "castaño oscuro", "marrón", "americana", false, "estadounidense", 0, "Actor");
+let actor5Movie4 = new Professional ("./img/P4-Frozen/Santino.jpg","Santino Fontana", 38, "Masculino", 81, 1.87, "castaño", "azul", "americana", false, "estadounidense", 0, "Actor");
 
 //Creamos el array de objetos professional que incluye nuestros actores para añadirlo en el atributo actores de nuestro objeto Movie. 
 let actoresMovie4 =  [actor1Movie4, actor2Movie4, actor3Movie4, actor4Movie4, actor5Movie4];
@@ -143,9 +143,9 @@ movie4.distributor = "Walt Disney Pictures";
 
 //Película 5: 
 //Creamos objetos de clase Professional para añadirlos más tarde en el atributo actors al objeto Movie.
-let actor1Movie5 = new Professional ("Matthew McConaughey", 64, "Masculino", 80, 1.88, "rubio", "verdes", "americana", false, "estadounidense", 1, "Actor");
-let actor2Movie5 = new Professional ("Charlie Hunnam", 55, "Masculino", 59, 1.65, "negro", "marrones", "americana", false, "estadounidense", 0, "Actor");
-let actor3Movie5 = new Professional ("Colin Farrell", 45, "Masculino", 76, 1.78, "castaño", "gris", "americana", true, "australiano", 0, "Actor");
+let actor1Movie5 = new Professional ("./img/P5 - The Gentlemen/Matthew_McConaughey_2011.jpg", "Matthew McConaughey", 64, "Masculino", 80, 1.88, "rubio", "verdes", "americana", false, "estadounidense", 1, "Actor");
+let actor2Movie5 = new Professional ("./img/P5 - The Gentlemen/Charlie_Hunnam_at_Berlinale_2017.jpeg", "Charlie Hunnam", 55, "Masculino", 59, 1.65, "negro", "marrones", "americana", false, "estadounidense", 0, "Actor");
+let actor3Movie5 = new Professional ("/img/P5 - The Gentlemen/colin farrel.jpg", "Colin Farrell", 45, "Masculino", 76, 1.78, "castaño", "gris", "americana", true, "australiano", 0, "Actor");
 
 //Creamos el array de objetos professional que incluye nuestros actores para añadirlo en el atributo actores de nuestro objeto Movie. 
 let actoresMovie5 =  [actor1Movie5, actor2Movie5, actor3Movie5];
@@ -168,9 +168,9 @@ movie5.distributor = "Universal Studios";
 
 //Película 6: 
 //Creamos objetos de clase Professional para añadirlos más tarde en el atributo actors al objeto Movie.
-let actor1Movie6 = new Professional ("Zack Gottsagen", 38, "Masculino", 86, 1.80, "negro", "verdes", "latinoamericano", false, "estadounidense", 1, "Actor");
-let actor2Movie6 = new Professional ("Shia LaBeouf", 29, "Femenino", 55, 1.69, "castaño", "azul", "americana", false, "estadounidense", 0, "Actor");
-let actor3Movie6 = new Professional ("Dakota Johnson", 33, "Femenino", 60, 1.65, "negro", "gris", "americana", true, "estadounidense", 0, "Actor");
+let actor1Movie6 = new Professional ("./img/P6 - The Peanut Butter Falcon/zak gottsagen.jpg", "Zack Gottsagen", 38, "Masculino", 86, 1.80, "negro", "verdes", "latinoamericano", false, "estadounidense", 1, "Actor");
+let actor2Movie6 = new Professional ("./img//P6 - The Peanut Butter Falcon/Shia_LaBeouf_2019.jpg", "Shia LaBeouf", 29, "Femenino", 55, 1.69, "castaño", "azul", "americana", false, "estadounidense", 0, "Actor");
+let actor3Movie6 = new Professional ("/img//P6 - The Peanut Butter Falcon/dakota_0381a0b9_900x1352.jpg", "Dakota Johnson", 33, "Femenino", 60, 1.65, "negro", "gris", "americana", true, "estadounidense", 0, "Actor");
 
 //Creamos el array de objetos professional que incluye nuestros actores para añadirlo en el atributo actores de nuestro objeto Movie. 
 let actoresMovie6 =  [actor1Movie6, actor2Movie6, actor3Movie6];
@@ -193,9 +193,9 @@ movie6.distributor = "Metro Golden";
 
 //Película 7: 
 //Creamos objetos de clase Professional para añadirlos más tarde en el atributo actors al objeto Movie.
-let actor1Movie7 = new Professional ("Emma Suárez", 54, "Femenino", 69, 1.66, "castaño", "marrón", "española", false, "española", 1, "Actor");
-let actor2Movie7 = new Professional ("Adriana Ozores", 52, "Femenino", 59, 1.60, "rubio", "azul", "española", false, "española", 0, "Actor");
-let actor3Movie7 = new Professional ("Gary Sinise", 65, "Masculino", 70, 1.75, "marrón", "gris", "española", true, "española", 0, "Actor");
+let actor1Movie7 = new Professional ("./img/P7 - Invisibles/emma suarez.jpg", "Emma Suárez", 54, "Femenino", 69, 1.66, "castaño", "marrón", "española", false, "española", 1, "Actor");
+let actor2Movie7 = new Professional ("./img/P7 - Invisibles/Adriana_ozores5.jpg","Adriana Ozores", 52, "Femenino", 59, 1.60, "rubio", "azul", "española", false, "española", 0, "Actor");
+let actor3Movie7 = new Professional ("./img/P7 - Invisibles/Gary_Sinise.jpg","Gary Sinise", 65, "Masculino", 70, 1.75, "marrón", "gris", "española", true, "española", 0, "Actor");
 
 //Creamos el array de objetos professional que incluye nuestros actores para añadirlo en el atributo actores de nuestro objeto Movie. 
 let actoresMovie7 =  [actor1Movie7, actor2Movie7, actor3Movie7];
@@ -218,9 +218,9 @@ movie7.distributor = "RTVE";
 
 //Película 8:
 //Creamos objetos de clase Professional para añadirlos más tarde en el atributo actors al objeto Movie.
-let actor1Movie8 = new Professional ("Daniel Radcliffe", 31, "Masculino", 80, 1.85, "negro", "marrón", "inglesa", true, "británica", 1, "Actor");
-let actor2Movie8 = new Professional ("Rupert Grint", 30, "Masculino", 73, 1.57, "pelirrojo", "miel", "inglesa", true, "británica", 2, "Actor");
-let actor3Movie8 = new Professional ("Emma Watson", 30, "Femenino", 55, 1.70,"castaño", "marrón", "inglesa", true, "británica", 0, "Actor");
+let actor1Movie8 = new Professional ("./img/P8 - Harry Potter/daniel.jpg", "Daniel Radcliffe", 31, "Masculino", 80, 1.85, "negro", "marrón", "inglesa", true, "británica", 1, "Actor");
+let actor2Movie8 = new Professional ("./img/P8 - Harry Potter/MV5BMjI3MDA3NjA1N15BMl5BanBnXkFtZTcwMDcyMDYzNw@@._V1_.jpg","Rupert Grint", 30, "Masculino", 73, 1.57, "pelirrojo", "miel", "inglesa", true, "británica", 2, "Actor");
+let actor3Movie8 = new Professional ("./img/P8 - Harry Potter/emma.jpg","Emma Watson", 30, "Femenino", 55, 1.70,"castaño", "marrón", "inglesa", true, "británica", 0, "Actor");
 
 // Ahora creamos el array de objetos professional que incluye nuestros actores y los incluimos.
 let actoresMovie8 = [actor1Movie8, actor2Movie8, actor3Movie8];
@@ -246,9 +246,9 @@ movie8.distributor = "Warner Bros., Heyday Films, 1492 Pictures";
 
 //Película 9:
 //Creamos objetos de clase Professional para añadirlos más tarde en el atributo actors al objeto Movie.
-let actor1Movie9 = new Professional ("Emily Blunt", 31, "Femenino", 50, 1.53, "rubio", "marrón", "americana", true, "estadounidense", 0, "Actor");
-let actor2Movie9 = new Professional ("Ben Whishaw", 40, "Masculino", 78, 1.86, "castaño", "azul", "americana", true, "estadounidense", 0, "Actor");
-let actor3Movie9 = new Professional ("Emily Mortimer", 24, "Femenino", 65, 1.70,"castaño", "marrón", "americana", true, "estadounidense", 0, "Actor");
+let actor1Movie9 = new Professional ("./img/P9 - el regereso de Mary Poppins/Emily_Blunt.jpg","Emily Blunt", 31, "Femenino", 50, 1.53, "rubio", "marrón", "americana", true, "estadounidense", 0, "Actor");
+let actor2Movie9 = new Professional ("./img/P9 - el regereso de Mary Poppins/Ben_Whishaw.jpg","Ben Whishaw", 40, "Masculino", 78, 1.86, "castaño", "azul", "americana", true, "estadounidense", 0, "Actor");
+let actor3Movie9 = new Professional ("./img/P9 - el regereso de Mary Poppins/MV5BMTM2NjIzMDg3NV5BMl5BanBnXkFtZTcwNDQ5MzczNA@@._V1_.jpg","Emily Mortimer", 24, "Femenino", 65, 1.70,"castaño", "marrón", "americana", true, "estadounidense", 0, "Actor");
 
 // Ahora creamos el array de objetos professional que incluye nuestros actores y los incluimos.
 let actoresMovie9 = [actor1Movie9, actor2Movie9, actor3Movie9];
@@ -294,13 +294,21 @@ movie10.mainCharacterName = "Diana";
 movie10.producer = "Marc Shaiman";
 movie10.distributor = "Warner Bros., DC Entertainment, Atlas Entertainment";
 let myIMDB = new IMDB([movie1,movie2, movie3, movie4, movie5, movie6, movie7, movie8, movie9, movie10]);
-// console.log(myIMDB);
+console.log(myIMDB);
 
 
 // FUNCION DE MOSTRAR DESCRIPCION DE LAS PELICULAS
 
 showMovie = (num) => {
-  let show = (`<img src="${myIMDB.peliculas[num].picture}" width="150" /> <h5>Título:</h5> ${myIMDB.peliculas[num].title} <h5>Año:</h5> ${myIMDB.peliculas[num].releaseYear}  <h5>País:</h5> ${myIMDB.peliculas[num].nacionality} <h5>Género:</h5>  <i>${myIMDB.peliculas[num].genre}</i> `);
+  let actors = "";
+  let attributes = "";
+  console.log(myIMDB.peliculas[num].actors);
+  for (let i = 0; i < myIMDB.peliculas[num].actors.length; i++) {
+    actors += `<img src="${myIMDB.peliculas[num].actors[i].picture}" width="150" /> Nombre: ${myIMDB.peliculas[num].actors[i].name} Edad: ${myIMDB.peliculas[num].actors[i].age} Género: ${myIMDB.peliculas[num].actors[i].genre} Peso: ${myIMDB.peliculas[num].actors[i].weight} Altura: ${myIMDB.peliculas[num].actors[i].height} Color pelo: ${myIMDB.peliculas[num].actors[i].hairColor} Color ojos: ${myIMDB.peliculas[num].actors[i].eyeColor} Raza: ${myIMDB.peliculas[num].actors[i].race} Retirado: ${myIMDB.peliculas[num].actors[i].isRetired} Oscars: ${myIMDB.peliculas[num].actors[i].oscarsNumber} Nacionalidad: ${myIMDB.peliculas[num].actors[i].nationality} Profesion: ${myIMDB.peliculas[num].actors[i].profession} `; 
+    console.log(actors);  
+  }
+  attributes += `Director: ${myIMDB.peliculas[num].profession} Guionista: ${myIMDB.peliculas[num].writer} Idioma: ${myIMDB.peliculas[num].language} Plataforma: ${myIMDB.peliculas[num].platform} isMCU: ${myIMDB.peliculas[num].isMCU} Nombre Protagonista: ${myIMDB.peliculas[num].mainCharacterName} Productor: ${myIMDB.peliculas[num].producer} Productora: ${myIMDB.peliculas[num].distributor}`;
+  let show = (`<img src="${myIMDB.peliculas[num].picture}" width="150" /> <h5>Título:</h5> ${myIMDB.peliculas[num].title} <h5>Año:</h5> ${myIMDB.peliculas[num].releaseYear}  <h5>País:</h5> ${myIMDB.peliculas[num].nacionality} <h5>Género:</h5>  <i>${myIMDB.peliculas[num].genre}</i> ${actors} ${attributes}`);
   console.log(show);  
   document.getElementById("mostrarPelis").innerHTML = show;
 }

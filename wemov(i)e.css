@@ -125,5 +125,10 @@ body
     width: 120px;
 }
 
+#mostrarPelis{
+    display: flex;
+    flex-direction: column;
+}
+
 
 
