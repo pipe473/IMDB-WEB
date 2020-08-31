@@ -6,8 +6,8 @@ class IMDB {
 }
   
 class Professional {
-    constructor(picture,name, age, genre, weight, height, hairColor, eyeColor,race,isRetired, nationality, oscarsNumber, profession) {
-      this.picture = picture;
+    constructor(name, age, genre, weight, height, hairColor, eyeColor,race,isRetired, nationality, oscarsNumber, profession) {
+      // this.picture = picture;
       this.name = name;
       this.age = age;
       this.genre = genre;
@@ -21,17 +21,14 @@ class Professional {
       this.nationality = nationality;
       this.profession = profession;
       
-    }    
-    showAttributes() {
-      let show = (`${this.picture} \n Name: ${this.name} \n Age: ${this.age} \n Genre: ${this.genre} \n Weight: ${this.weight} \n Height: ${this.height} \n Hair Color: ${this.hairColor} \n Eye Color: ${this.eyeColor} \n Race: ${this.race} \n Is Retired? ${this.isRetired} \n Nationality: ${this.nationality} \n Oscars Number: ${this.oscasrsNumber} \n Profession: ${this.profession}\n`);
-      return  show;
-    }
+    }     
+
   }
 
 class Movie {
     //Implementacion del método constructor
-    constructor(picture, title, releaseYear, nacionality, genre) {
-      this.picture = picture;
+    constructor(title, releaseYear, nacionality, genre) {
+      // this.picture = picture;
       this.title = title;
       this.releaseYear = releaseYear;
       this.nacionality = nacionality;
@@ -245,6 +242,8 @@ movie8.producer = "David Heyman";
 movie8.distributor = "Warner Bros., Heyday Films, 1492 Pictures";
 
 
+
+
 //Película 9:
 //Creamos objetos de clase Professional para añadirlos más tarde en el atributo actors al objeto Movie.
 let actor1Movie9 = new Professional ("Emily Blunt", 31, "Femenino", 50, 1.53, "rubio", "marrón", "americana", true, "estadounidense", 0, "Actor");
@@ -295,4 +294,15 @@ movie10.mainCharacterName = "Diana";
 movie10.producer = "Marc Shaiman";
 movie10.distributor = "Warner Bros., DC Entertainment, Atlas Entertainment";
 let myIMDB = new IMDB([movie1,movie2, movie3, movie4, movie5, movie6, movie7, movie8, movie9, movie10]);
-console.log(myIMDB);
+// console.log(myIMDB);
+
+
+showMovie = (title) => {
+  console.log(myIMDB)
+  for (let i = 0; i < myIMDB.peliculas.length; i++) {  
+    if (myIMDB.peliculas[i].title === title) { 
+     console.log(`titulo:${myIMDB.peliculas[i].title} , año:${myIMDB.peliculas[i].releaseYear} , país:${myIMDB.peliculas[i].nacionality} , género:${myIMDB.peliculas[i].genre} `);
+    }
+  }
+}
+
