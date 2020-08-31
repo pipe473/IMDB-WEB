@@ -9,8 +9,7 @@ class IMDB {
   }
     
   class Professional {
-      constructor(picture, name, age, genre, weight, height, hairColor, eyeColor,race,isRetired, nationality, oscarsNumber, profession) {
-        this.picture = picture;
+      constructor(name, age, genre, weight, height, hairColor, eyeColor,race,isRetired, nationality, oscarsNumber, profession, picture) {
         this.name = name;
         this.age = age;
         this.genre = genre;
@@ -23,6 +22,8 @@ class IMDB {
         this.oscasrsNumber = oscarsNumber;
         this.nationality = nationality;
         this.profession = profession;
+        this.picture = picture;
+
         
       }    
       showAttributes() {
@@ -33,12 +34,12 @@ class IMDB {
   
   class Movie {
       //Implementacion del método constructor
-      constructor(picture, title, releaseYear, nacionality, genre) {
-        this.picture = picture;
+      constructor(title, releaseYear, nacionality, genre, picture) {
         this.title = title;
         this.releaseYear = releaseYear;
         this.nacionality = nacionality;
         this.genre = genre;      
+        this.picture = picture;
       }
   }
   
@@ -118,7 +119,7 @@ class IMDB {
   movie3.isMCU = false;
   movie3.mainCharacterName = "Forrest Gump";
   movie3.producer = "Wendy Finerman";
-  movie3.distributor = "Paramount Pictures";
+  movie3.distributor = "Paramount Pictures"; 
   
   //Película 4:
   //Creamos objetos de clase Professional para añadirlos más tarde en el atributo actors al objeto Movie.
@@ -298,5 +299,16 @@ class IMDB {
   movie10.producer = "Marc Shaiman";
   movie10.distributor = "Warner Bros., DC Entertainment, Atlas Entertainment";
   
-  let myIMDB = new IMDB([movie1, movie2, movie3, movie4, movie5, movie6, movie7, movie8]);
+  let myIMDB = new IMDB([movie1, movie2, movie3, movie4, movie5, movie6, movie7, movie8, movie9, actor1Movie10]);
+  
+  $(function(){
+
+    $("#boton-send").click(function(){
+      let peliNueva = new Movie ($("#input-title").val(), $("#input-release").val(), $("#input-nationality").val(), $("#input-genre").val(), $("#input-url").val())
+      myIMDB.peliculas.push(peliNueva)
+      $("#fotoNueva").attr("src", myIMDB.peliculas[10].picture);
+      $("#nuevoDiv").show();
+    });
+
+  })
   

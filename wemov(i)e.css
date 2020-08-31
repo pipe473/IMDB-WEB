@@ -76,3 +76,54 @@ body
     border-color: #ffe48457 !important;
     border-radius: 5px;
 }
+
+
+/* ///// FORMULARIO //// */
+
+
+#container-form  
+{
+    padding-top: 15px;
+    height: 26em;
+    margin-left: 335px;
+    background-color: rgba(48, 49, 46, 0.204);
+    width: 590px;
+}
+
+
+.form-control 
+{
+    width: 550px;
+    margin-left:20px;
+    margin-top:5px;
+    height: 45px;
+}
+
+#boton-send 
+{
+    margin-top: 40px; 
+    margin-left: 225px;
+}
+
+#intro-form 
+{
+    color: #FFE484;
+    font-size: 20px;
+    margin-left: 110px;
+    font-weight: bold;
+}
+
+
+/* ///////// BUSCADOR HEADER ////////////// */
+#caja-buscar
+{
+    width: 550px;
+}
+
+#buscar-header
+{
+    width: 120px;
+}
+
+
+
