@@ -25,7 +25,8 @@
   </nav>
 
 
-  
+  <!-- LO QUE EL VIENTO SE LLEVO -->
+
   <div id="container" class="row">
     <div class="card" style="width: 12em;">
         <img class="card-img-top" src="./img/P1 - lo que el viento se llevó/viento-se-llevo.jpg" alt="forzen">
@@ -34,12 +35,18 @@
         </div>
     </div>
 
+
+    <!-- PADRE NO HAY MAS QUE UNO 2 -->
+
     <div class="card" style="width: 12rem;">
         <img class="card-img-top" src="./img/P2- padre no hay mas que uno 2/padre-no-hay-mas-que-uno.jpg" alt="Wonderwoman">
         <div class="card-body">
          <button id="boton2" type="button" class="btn btn-secondary btn-sm"> Ver info </button> 
         </div>
     </div>
+
+
+    <!-- FOREST GUMP -->
 
     <div class="card" style="width: 12rem;">
         <img class="card-img-top" src="./img/P3-Forrest gump/forrest-gump.jpg" alt="hp">
@@ -48,13 +55,18 @@
         </div>
     </div>
 
+
+    <!-- FROZEN -->
+
     <div class="card" style="width: 12em;">
         <img class="card-img-top" src="./img/P4-Frozen/forzen.jpg" alt="mary-poppins">
         <div class="card-body">
          <button id="boton4" type="button" class="btn btn-secondary btn-sm"> Ver info </button> 
         </div>
     </div>
- 
+
+
+    <!-- THE GENTLEMEN  -->
 
     <div class="card" style="width: 12em;">
         <img class="card-img-top" src="./img/P5 - The Gentlemen/the_gentlemen-425828685-large.jpg" alt="padre-no-hay-mas-que-uno">
@@ -63,53 +75,104 @@
         </div>
     </div>
 </div>
+
+
+    <!-- THE PEANUT FALCON -->
+
     <div id="container" class="row">    
     <div class="card" style="width: 12em;">
         <img class="card-img-top" src="./img/P6 - The Peanut Butter Falcon/the_peanut_butter_falcon-642324654-large.jpg" alt="lo-que-el-viento-se-llevo">
         <div class="card-body">
          <!-- <p class="card-text">Lo que el viento se llevó</p> -->
-         <button id="boton6" type="button" class="btn btn-secondary btn-sm"> Ver info </button>  
+         <!-- <button id="boton6" type="button" class="btn btn-secondary btn-sm"> Ver info </button>   -->
+         <button type="button" class="btn btn-info btn-sm" id="#boton6" data-toggle="modal" data-target="#myModal8">Ver info</button> 
         </div>
     </div>
+
+
+    <!-- INVISIBLES -->
 
     <div class="card" style="width: 12em;">
-        <img class="card-img-top" src="img/P7 - Invisibles/invisibles-949856399-large.jpg" alt="lo-que-el-viento-se-llevo">
+        <img class="card-img-top" src="img/P7 - Invisibles/invisibles-949856399-large.jpg" alt="invisibles">
         <div class="card-body">
          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-         <button id="boton7" type="button" class="btn btn-secondary btn-sm"> Ver info </button>  
+         <button type="button" class="btn btn-info btn-sm" id="#boton7" data-toggle="modal" data-target="#myModal7">Ver info</button>  
         </div>
     </div>
+
+
+    <!-- HARRY POTTER -->
 
     <div class="card" style="width: 12em;">
-        <img class="card-img-top" src="img/P8 - Harry Potter/harry-potter.jpg" alt="lo-que-el-viento-se-llevo">
+        <img class="card-img-top" src="img/P8 - Harry Potter/harry-potter.jpg" alt="harry-potter">
         <div class="card-body">
          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-         <button id="boton8" type="button" class="btn btn-secondary btn-sm"> Ver info </button>  
+         <button type="button" class="btn btn-info btn-sm" id="#boton8" data-toggle="modal" data-target="#myModal2">Ver info</button> 
         </div>
     </div>
 
+
+    <!-- MARY POPPINS -->
 
     <div class="card" style="width: 12em;">
-        <img class="card-img-top" src="./img/P9 - el regereso de Mary Poppins/mary-poppins.jpg" alt="lo-que-el-viento-se-llevo">
+        <img class="card-img-top" src="./img/P9 - el regereso de Mary Poppins/mary-poppins.jpg" alt="mary-poppins">
         <div class="card-body">
          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-         <button id="#boton9" type="button" class="btn btn-secondary btn-sm"> Ver info </button>  
+         <!-- <button id="#boton9" type="button" class="btn btn-secondary btn-sm"> Ver info </button>   -->
+         <button type="button" class="btn btn-info btn-sm" id="#boton9" data-toggle="modal" data-target="#myModal">Ver info</button>
         </div>
     </div>
 
+
+
+    <!-- WONDERWOMAN -->
 
     <div class="card" style="width: 12em;">
-        <img class="card-img-top" src="./img/P10- Wonder Woman/wonder-woman.jpg" alt="lo-que-el-viento-se-llevo">
+        <img class="card-img-top" src="./img/P10- Wonder Woman/wonder-woman.jpg" alt="Wonderwoman">
         <div class="card-body">
          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-         <button id="boton10" type="button" class="btn btn-secondary btn-sm"> Ver info </button>  
+         <button type="button" class="btn btn-info btn-sm" id="#boton10" data-toggle="modal" data-target="#myModal1" onclick="showAttributes()">Ver info</button> 
         </div>
     </div>
+
+
+    <!-- ACCIONES DEL MODAL -->
+
+
+
+    <!-- WONDERWOMAN -->
 
     <div class="container">
-        <h2>Modal Example</h2>
+      
+        <!-- Modal -->
+        <div class="modal fade" id="myModal1" role="dialog">
+          <div class="modal-dialog">
+          
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Información: </h4>
+              </div>
+              <div class="modal-body">
+                  <h3>Wonderwoman</h3>                  
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+
+       <!-- MERYPOPPINS -->
+
+    <div class="container">
+        <!-- <h2>HOLA</h2> -->
         <!-- Trigger the modal with a button -->
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+        <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Ver info</button> -->
       
         <!-- Modal -->
         <div class="modal fade" id="myModal" role="dialog">
@@ -119,13 +182,13 @@
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Modal Header</h4>
+                <h4 class="modal-title">Información: </h4>
               </div>
               <div class="modal-body">
-                <p>Some text in the modal.</p>
+                  <h3>MERYPOPPINS</h3>                  
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
               </div>
             </div>
             
@@ -133,6 +196,94 @@
         </div>
         
       </div>
+
+       <!-- HARRYPOTTER -->
+
+    <div class="container">
+        <!-- <h2>HOLA</h2> -->
+        <!-- Trigger the modal with a button -->
+        <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Ver info</button> -->
+      
+        <!-- Modal -->
+        <div class="modal fade" id="myModal2" role="dialog">
+          <div class="modal-dialog">
+          
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Información: </h4>
+              </div>
+              <div class="modal-body">
+                  <h3>HARRY POTTER</h3>                  
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+
+
+       <!-- INVISIBLES -->
+
+    <div class="container">
+      
+        <!-- Modal -->
+        <div class="modal fade" id="myModal7" role="dialog">
+          <div class="modal-dialog">
+          
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Información: </h4>
+              </div>
+              <div class="modal-body">
+                  <h3>Invisibles</h3>                  
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+
+
+       <!-- THE PEANUT FALCON -->
+
+    <div class="container">
+      
+        <!-- Modal -->
+        <div class="modal fade" id="myModal8" role="dialog">
+          <div class="modal-dialog">
+          
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Información: </h4>
+              </div>
+              <div class="modal-body">
+                  <h3>The Peanut Falcon</h3>                  
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- ***** FIN ACCIONES DEL MODAL ***** -->
 
   </div>
 <div class="result">
