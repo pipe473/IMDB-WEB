@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wemov(i)e</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-    <script src="wemov(i)e.js"></script>
+    <script src="./mainIMDB.js"></script>
     <link rel="stylesheet" href="wemov(i)e.css">
     <script src="https://kit.fontawesome.com/463b8176e8.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="image/png" href="./img/favIcon.png">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -21,102 +23,134 @@
       WeMov[i]e
     </a>
 
-<!-- //// BUSCAR PELIS ///////// -->
+<!-- //// BARRA BUSCADOR PELIS ///////// -->
     <form class="form-inline">
         <input id="caja-buscar" class="form-control mr-sm-2" type="search" placeholder="¿Qué te apetece ver hoy?" aria-label="Search">
         <button id="buscar-header" class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
       </form>
 
-
   </nav>
+  <!-- ****** PELIS ******* -->
 
-  
+  <!-- LO QUE EL VIENTO SE LLEVO -->
+
   <div id="container" class="row">
-  
-
     <div class="card" style="width: 12em;">
-        <img class="card-img-top" src="./img/P1 - lo que el viento se llevó/viento-se-llevo.jpg" alt="forzen">
+        <img class="card-img-top" src="./img/P1 - lo que el viento se llevó/viento-se-llevo.jpg" alt="lo que el viento se llevó">
         <div class="card-body">
-         <button id="boton1" type="button" class="btn btn-secondary btn-sm"> Ver info </button> 
+            <button type="button" class="btn btn-info btn-sm" id="#boton1" onclick="showMovie(0)" data-toggle="modal" data-target="#myModal1">Ver info</button>
         </div>
     </div>
+
+    <!-- PADRE NO HAY MAS QUE UNO 2 -->
 
     <div class="card" style="width: 12rem;">
-        <img class="card-img-top" src="./img/P2- padre no hay mas que uno 2/padre-no-hay-mas-que-uno.jpg" alt="Wonderwoman">
+        <img class="card-img-top" src="./img/P2- padre no hay mas que uno 2/padre-no-hay-mas-que-uno.jpg" alt="padre no hay mas que uno 2">
         <div class="card-body">
-         <button id="boton2" type="button" class="btn btn-secondary btn-sm"> Ver info </button> 
+            <button type="button" class="btn btn-info btn-sm" id="#boton2" onclick="showMovie(1)" data-toggle="modal" data-target="#myModal1">Ver info</button>
         </div>
     </div>
+
+    <!-- FORREST GUMP -->
 
     <div class="card" style="width: 12rem;">
-        <img class="card-img-top" src="./img/P3-Forrest gump/forrest-gump.jpg" alt="hp">
+        <img class="card-img-top" src="./img/P3-Forrest gump/forrest-gump.jpg" alt="forest gump">
         <div class="card-body">
-         <button  id="boton3" type="button" class="btn btn-secondary btn-sm"> Ver info </button> 
+            <button type="button" class="btn btn-info btn-sm" id="#boton3" onclick="showMovie(2)" data-toggle="modal" data-target="#myModal1">Ver info</button>
         </div>
     </div>
+
+    <!-- FROZEN -->
 
     <div class="card" style="width: 12em;">
-        <img class="card-img-top" src="./img/P4-Frozen/forzen.jpg" alt="mary-poppins">
+        <img class="card-img-top" src="./img/P4-Frozen/forzen.jpg" alt="frozen">
         <div class="card-body">
-         <button id="boton4" type="button" class="btn btn-secondary btn-sm"> Ver info </button> 
+            <button type="button" class="btn btn-info btn-sm" id="#boton4" onclick="showMovie(3)" data-toggle="modal" data-target="#myModal1">Ver info</button>
         </div>
     </div>
- 
+
+    <!-- THE GENTLEMEN  -->
 
     <div class="card" style="width: 12em;">
-        <img class="card-img-top" src="./img/P5 - The Gentlemen/the_gentlemen-425828685-large.jpg" alt="padre-no-hay-mas-que-uno">
+        <img class="card-img-top" src="./img/P5 - The Gentlemen/the_gentlemen-425828685-large.jpg" alt="the-gentlemen">
         <div class="card-body">
-         <button id="boton5" type="button" class="btn btn-secondary btn-sm"> Ver info </button> 
+            <button type="button" class="btn btn-info btn-sm" id="#boton5" onclick="showMovie(4)" data-toggle="modal" data-target="#myModal1">Ver info</button>
         </div>
     </div>
-
 </div>
 
+    <!-- THE PEANUT FALCON -->
 
-    <div id="container" class="row">
-    
+    <div id="container" class="row">    
     <div class="card" style="width: 12em;">
-        <img class="card-img-top" src="./img/P6 - The Peanut Butter Falcon/the_peanut_butter_falcon-642324654-large.jpg" alt="lo-que-el-viento-se-llevo">
+        <img class="card-img-top" src="./img/P6 - The Peanut Butter Falcon/the_peanut_butter_falcon-642324654-large.jpg" alt="the peanut butter falcon">
         <div class="card-body">
-         <!-- <p class="card-text">Lo que el viento se llevó</p> -->
-         <button id="boton6" type="button" class="btn btn-secondary btn-sm"> Ver info </button>  
+         <button type="button" class="btn btn-info btn-sm" id="#boton6" onclick="showMovie(5)" data-toggle="modal" data-target="#myModal1">Ver info</button> 
         </div>
     </div>
 
+    <!-- INVISIBLES -->
+
     <div class="card" style="width: 12em;">
-        <img class="card-img-top" src="img/P7 - Invisibles/invisibles-949856399-large.jpg" alt="lo-que-el-viento-se-llevo">
+        <img class="card-img-top" src="img/P7 - Invisibles/invisibles-949856399-large.jpg" alt="invisibles">
         <div class="card-body">
-         <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-         <button id="boton7" type="button" class="btn btn-secondary btn-sm"> Ver info </button>  
+         <button type="button" class="btn btn-info btn-sm" id="#boton7" onclick="showMovie(6)" data-toggle="modal" data-target="#myModal1">Ver info</button>  
         </div>
     </div>
 
+    <!-- HARRY POTTER -->
+
     <div class="card" style="width: 12em;">
-        <img class="card-img-top" src="img/P8 - Harry Potter/harry-potter.jpg" alt="lo-que-el-viento-se-llevo">
+        <img class="card-img-top" src="img/P8 - Harry Potter/harry-potter.jpg" alt="harry-potter">
         <div class="card-body">
-         <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-         <button id="boton8" type="button" class="btn btn-secondary btn-sm"> Ver info </button>  
+         <button type="button" class="btn btn-info btn-sm" id="#boton8" onclick="showMovie(7)" data-toggle="modal" data-target="#myModal1">Ver info</button> 
+        </div>
+    </div>
+
+    <!-- MARY POPPINS -->
+
+    <div class="card" style="width: 12em;">
+        <img class="card-img-top" src="./img/P9 - el regereso de Mary Poppins/mary-poppins.jpg" alt="mary poppins">
+        <div class="card-body">
+         <button type="button" class="btn btn-info btn-sm" id="#boton9" onclick="showMovie(8)" data-toggle="modal" data-target="#myModal1">Ver info</button>
         </div>
     </div>
 
 
+    <!-- WONDERWOMAN -->
+
     <div class="card" style="width: 12em;">
-        <img class="card-img-top" src="./img/P9 - el regereso de Mary Poppins/mary-poppins.jpg" alt="lo-que-el-viento-se-llevo">
+        <img class="card-img-top" src="./img/P10- Wonder Woman/wonder-woman.jpg" alt="Wonderwoman">
         <div class="card-body">
-         <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-         <button id="#boton9" type="button" class="btn btn-secondary btn-sm"> Ver info </button>  
+         <button type="button" class="btn btn-info btn-sm" id="#boton10" onclick="showMovie(9)" data-toggle="modal" data-target="#myModal1" >Ver info</button> 
         </div>
     </div>
 
+    <!-- ********** ACCION DEL MODAL ********** -->
 
-    <div class="card" style="width: 12em;">
-        <img class="card-img-top" src="./img/P10- Wonder Woman/wonder-woman.jpg" alt="lo-que-el-viento-se-llevo">
-        <div class="card-body">
-         <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-         <button id="boton10" type="button" class="btn btn-secondary btn-sm"> Ver info </button>  
-        </div>
-    </div>
+    <div class="container">      
+        <!-- Modal -->
+        <div class="modal fade" id="myModal1" role="dialog">
+          <div class="modal-dialog">          
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"></h4>
+              </div>
+              <div class="modal-body">
+                  <!-- <img src="" id="mostrarImagen" alt=""> -->
+                <p id="mostrarPelis"></p>                  
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>            
+          </div>
+        </div>        
+      </div>     
 
+      <!-- ***** FIN ACCIONES DEL MODAL ***** -->
   </div>
 
 

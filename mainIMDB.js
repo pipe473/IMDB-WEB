@@ -6,8 +6,8 @@ class IMDB {
 }
   
 class Professional {
-    constructor(picture,name, age, genre, weight, height, hairColor, eyeColor,race,isRetired, nationality, oscarsNumber, profession) {
-      this.picture = picture;
+    constructor(name, age, genre, weight, height, hairColor, eyeColor,race,isRetired, nationality, oscarsNumber, profession) {
+      // this.picture = picture;
       this.name = name;
       this.age = age;
       this.genre = genre;
@@ -21,10 +21,8 @@ class Professional {
       this.nationality = nationality;
       this.profession = profession;
       
-    }    
-    showAttributes() {
-      console.log(`${this.picture} \n Name: ${this.name} \n Age: ${this.age} \n Genre: ${this.genre} \n Weight: ${this.weight} \n Height: ${this.height} \n Hair Color: ${this.hairColor} \n Eye Color: ${this.eyeColor} \n Race: ${this.race} \n Is Retired? ${this.isRetired} \n Nationality: ${this.nationality} \n Oscars Number: ${this.oscasrsNumber} \n Profession: ${this.profession}\n`);
-    }
+    }     
+
   }
 
 class Movie {
@@ -54,7 +52,7 @@ let escritorMovie1 = new Professional ("Sidney Howard", 48,"Masculino", 76, 1.80
 let directorMovie1 = new Professional ("Victor Fleming", 59, "Masculino", 78, 1.75, "castaño", "verde", "americana", true, "estadounidense", 1, "Actor");
 
 // Ahora podemos crear el objeto de clase Movie, rellenando los parámetros del constructor con los valores creados y, después, A MANO, el resto de atributos que no están en el constructor y son PÚBLICOS (accedemos directamente con punto, no es necesario setter)
-let movie1 = new Movie ("Lo que el viento se llevó: No me des más tormento", 1939, "Estados Unidos", "Dramón | Aventuras | Tragicomedia");
+let movie1 = new Movie ("./img/P1 - lo que el viento se llevó/viento-se-llevo.jpg", "Lo que el viento se llevó: No me des más tormento", 1939, "Estados Unidos", "Dramón | Aventuras | Tragicomedia");
 movie1.actors= actoresMovie1; 
 movie1.director = directorMovie1;
 movie1.writer = escritorMovie1;
@@ -80,7 +78,7 @@ let directorMovie2 = new Professional ("Santiago Segura Silva", 55, "Masculino",
 let escritorMovie2 = new Professional ("Marta González de Vega", 43, "Femenino", 55, 1.63, "castaño", "marrón", "caucásica", false, "española", 0, "GUionista");
 
 // Ahora podemos crear el objeto de clase Movie, rellenando los parámetros del constructor y, después, A MANO, el resto de atributos que no están en el constructor y son PÚBLICOS (accedemos directamente con punto, no es necesario setter)
-let movie2 = new Movie ("Padre no hay más que uno 2: La llegada de la suegra", 2020, "España", "Comedia | Secuela. Familia");
+let movie2 = new Movie ("./img/P2- padre no hay mas que uno 2/padre-no-hay-mas-que-uno.jpg", "Padre no hay más que uno 2: La llegada de la suegra", 2020, "España", "Comedia | Secuela. Familia");
 movie2.actors= actoresMovie2; 
 movie2.director = directorMovie2;
 movie2.writer = escritorMovie2;
@@ -105,7 +103,7 @@ let directorMovie3 = new Professional ("Robert Zemeckis", 68, "Masculino", 74, 1
 let escritorMovie3 = new Professional ("Eric Roth", 75, "Masculino", 78, 1.80, "negro", "marrón", "americana", true, "estadounidense", 1, "Guionista");
 
 // Ahora creamos el objeto de clase Movie, rellenando los parámetros del constructor y, después, A MANO, el resto de atributos que no están en el constructor y son PÚBLICOS (accedemos directamente con punto, no es necesario setter)
-let movie3 = new Movie ("Forrest Gump", 1994, "Estados Unidos", "Comedia/Drama/Romance");
+let movie3 = new Movie ("/img/P3-Forrest gump/forrest-gump.jpg", "Forrest Gump", 1994, "Estados Unidos", "Comedia/Drama/Romance");
 movie3.actors = actoresMovie3; 
 movie3.director = directorMovie3;
 movie3.writer = escritorMovie3;
@@ -132,7 +130,7 @@ let directorMovie4 = new Professional ("Chris Buck", 62, "Masculino", 88, 1.90, 
 let escritorMovie4 = new Professional ("Jennifer Lee", 48, "Femenino", 66, 1.72, "rubio", "azul", "americana", false, "estadounidense", 1, "Guionista");
 
 // Ahora creamos el objeto de clase Movie, rellenando los parámetros del constructor y, después, A MANO, el resto de atributos que no están en el constructor y son PÚBLICOS (accedemos directamente con punto, no es necesario setter)
-let movie4 = new Movie ("Frozen: El reino del hielo", 2013, "Estados Unidos", "Animación | Infantil | Fantástico | Musical | Aventuras");
+let movie4 = new Movie ("./img/P4-Frozen/forzen.jpg", "Frozen: El reino del hielo", 2013, "Estados Unidos", "Animación | Infantil | Fantástico | Musical | Aventuras");
 movie4.actors = actoresMovie4; 
 movie4.director = directorMovie4;
 movie4.writer = escritorMovie4;
@@ -157,7 +155,7 @@ let directorMovie5 = new Professional ("Guy Ritchie", 66, "Masculino", 90, 1.65,
 let escritorMovie5 = new Professional ("Ivan Atkinson", 60, "Masculino", 70, 1.80, "gris", "verdes", "americana", true, "estadounidense", 1, "Guionista");
 
 // Ahora creamos el objeto de clase Movie, rellenando los parámetros del constructor y, después, A MANO, el resto de atributos que no están en el constructor y son PÚBLICOS (accedemos directamente con punto, no es necesario setter)
-let movie5 = new Movie ("The Gentlemen: Los señores de la mafia", 2019, "England", "Thriller. Acción. Comedia | Crimen. Drogas");
+let movie5 = new Movie ("./img/P5 - The Gentlemen/the_gentlemen-425828685-large.jpg","The Gentlemen: Los señores de la mafia", 2019, "England", "Thriller. Acción. Comedia | Crimen. Drogas");
 movie5.actors = actoresMovie5; 
 movie5.director = directorMovie5;
 movie5.writer = escritorMovie5;
@@ -182,7 +180,7 @@ let directorMovie6 = new Professional ("Tyler Nilson", 69, "Masculino", 74, 1.70
 let escritorMovie6 = new Professional ("Mike Schwartz", 75, "Masculino", 78, 1.80, "negro", "marrón", "americana", true, "estadounidense", 1, "Guionista");
 
 // Ahora creamos el objeto de clase Movie, rellenando los parámetros del constructor y, después, A MANO, el resto de atributos que no están en el constructor y son PÚBLICOS (accedemos directamente con punto, no es necesario setter)
-let movie6 = new Movie ("The Peanut Butter Falcon", 2019, "Estados Unidos", "Comedia/Drama/Romance");
+let movie6 = new Movie ("./img/P6 - The Peanut Butter Falcon/the_peanut_butter_falcon-642324654-large.jpg", "The Peanut Butter Falcon", 2019, "Estados Unidos", "Comedia/Drama/Romance");
 movie6.actors = actoresMovie6; 
 movie6.director = directorMovie6;
 movie6.writer = escritorMovie6;
@@ -207,7 +205,7 @@ let directorMovie7 = new Professional ("Santos Mercero", 65, "Masculino", 78, 1.
 let escritorMovie7 = new Professional ("Gracia Querejeta", 58, "Masculino", 70, 1.80, "negro", "marrón", "española", true, "español", 1, "Guionista");
 
 // Ahora creamos el objeto de clase Movie, rellenando los parámetros del constructor y, después, A MANO, el resto de atributos que no están en el constructor y son PÚBLICOS (accedemos directamente con punto, no es necesario setter)
-let movie7 = new Movie ("Invisibles", 2020, "España", "Drama | Amistad");
+let movie7 = new Movie ("./img/P7 - Invisibles/invisibles-949856399-large.jpg", "Invisibles", 2020, "España", "Drama | Amistad");
 movie7.actors = actoresMovie7; 
 movie7.director = directorMovie7;
 movie7.writer = escritorMovie7;
@@ -232,7 +230,7 @@ let escritorMovie8 = new Professional ("Steve Kloves", 56,"Masculino", 76, 1.80,
 let directorMovie8 = new Professional ("Chris Columbus", 63, "Masculino", 78, 1.75, "castaño", "verde", "inglesa", false, "británica", 1, "Actor");
 
 // Ahora podemos crear el objeto de clase Movie, rellenando los parámetros del constructor con los valores creados y, después, A MANO, el resto de atributos que no están en el constructor y son PÚBLICOS (accedemos directamente con punto, no es necesario setter)
-let movie8 = new Movie ("Harry Potter y la piedra filosofal", 2001, "Reino Unido", "Fantasía | Aventuras");
+let movie8 = new Movie ("./img/P8 - Harry Potter/harry-potter.jpg", "Harry Potter y la piedra filosofal", 2001, "Reino Unido", "Fantasía | Aventuras");
 movie8.actors= actoresMovie8; 
 movie8.director = directorMovie8;
 movie8.writer = escritorMovie8;
@@ -242,6 +240,8 @@ movie8.isMCU = false;
 movie8.mainCharacterName = "Harry Potter";
 movie8.producer = "David Heyman";
 movie8.distributor = "Warner Bros., Heyday Films, 1492 Pictures";
+
+
 
 
 //Película 9:
@@ -258,7 +258,7 @@ let escritorMovie9 = new Professional ("David Magee", 39,"Masculino", 76, 1.80, 
 let directorMovie9 = new Professional ("Rob Marshall", 58, "Masculino", 78, 1.75, "castaño", "verde", "australiana", false, "británica", 1, "Actor");
 
 // Ahora podemos crear el objeto de clase Movie, rellenando los parámetros del constructor con los valores creados y, después, A MANO, el resto de atributos que no están en el constructor y son PÚBLICOS (accedemos directamente con punto, no es necesario setter)
-let movie9 = new Movie ("El regreso de Mary Poppins", 2018, "Estados Unidos", "Musical. Fantástico | Cine familiar. Años 30. Secuela");
+let movie9 = new Movie ("./img/P9 - el regereso de Mary Poppins/mary-poppins.jpg", "El regreso de Mary Poppins", 2018, "Estados Unidos", "Musical. Fantástico | Cine familiar. Años 30. Secuela");
 movie9.actors= actoresMovie9; 
 movie9.director = directorMovie9;
 movie9.writer = escritorMovie9;
@@ -283,7 +283,7 @@ let escritorMovie10 = new Professional ("Allan Heinberg", 39,"Masculino", 76, 1.
 let directorMovie10 = new Professional ("Patty Jenkins", 58, "Femenino", 50, 1.60, "castaño", "verde", "australiana", false, "británica", 1, "Actor");
 
 // Ahora podemos crear el objeto de clase Movie, rellenando los parámetros del constructor con los valores creados y, después, A MANO, el resto de atributos que no están en el constructor y son PÚBLICOS (accedemos directamente con punto, no es necesario setter)
-let movie10 = new Movie ("Wonder Woman", 2017, "Estados Unidos", "Fantástico. Acción. Bélico. Aventuras | Superhéroes. Cómic. DC Comics. I Guerra Mundial");
+let movie10 = new Movie ("./img/P10- Wonder Woman/wonder-woman.jpg", "Wonder Woman", 2017, "Estados Unidos", "Fantástico. Acción. Bélico. Aventuras | Superhéroes. Cómic. DC Comics. I Guerra Mundial");
 movie10.actors= actoresMovie10; 
 movie10.director = directorMovie10;
 movie10.writer = escritorMovie10;
@@ -294,4 +294,12 @@ movie10.mainCharacterName = "Diana";
 movie10.producer = "Marc Shaiman";
 movie10.distributor = "Warner Bros., DC Entertainment, Atlas Entertainment";
 let myIMDB = new IMDB([movie1,movie2, movie3, movie4, movie5, movie6, movie7, movie8, movie9, movie10]);
-console.log(myIMDB);
+// console.log(myIMDB);
+
+
+showMovie = (num) => {
+  let show = (`<img src="${myIMDB.peliculas[num].picture}" width="150" /> <h5>Título:</h5> ${myIMDB.peliculas[num].title} <h5>Año:</h5> ${myIMDB.peliculas[num].releaseYear}  <h5>País:</h5> ${myIMDB.peliculas[num].nacionality} <h5>Género:</h5>  <i>${myIMDB.peliculas[num].genre}</i> `);
+  console.log(show);  
+  document.getElementById("mostrarPelis").innerHTML = show;
+}
+
