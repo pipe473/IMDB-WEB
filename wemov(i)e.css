@@ -100,5 +100,22 @@ body
     flex-direction: column;
 }
 
+#mostrarPelis > img:nth-child(1){
+    padding-bottom: 18px;
+}
 
+#mostrarPelis > h5:nth-child(3){
+    padding-top: 18px;
+}
 
+#mostrarPelis > h5:nth-child(4){
+    padding-top: 19px;
+}
+
+#mostrarPelis > h5:nth-child(5){
+    padding-top: 19px;
+}
+
+#mostrarPelis > i{
+    padding-bottom: 15px;
+}
