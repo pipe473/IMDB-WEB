@@ -160,16 +160,62 @@
   <div id="container" class="row">
 
   <div id="nuevoDiv" class="card" style="width: 12em; display: none;">
-   <img class="card-img-top" src="" alt="mi nueva imagen" id="fotoNueva">
+    <img class="card-img-top" src="" alt="lo-que-el-viento-se-llevo" id="fotoNueva">
         <div class="card-body">
-     <button id="boton10" type="button" class="btn btn-secondary btn-sm"> Ver info </button>  
+     <button id="boton10" onclick="showMovie(10)" type="button" class="btn btn-secondary btn-sm"> Ver info </button>  
     </div>
+</div>
+</div>
 
-</div>
-</div>
+  
+
+  <!-- ////////////// FORMULARIO /////////// -->
+
+  <!-- <div class="card" id="container-form">
+      <p id="intro-form">¡Crea y guarda tus propias películas aquí!</p>
+    <form>
+
+        <div class="form-row">
+          <div class="col">
+            <input id="input-title" type="text" class="form-control" placeholder="Insert Title">
+          </div>
+      
+      
+          <div class="col">
+            <input id="input-release" type="text" class="form-control" placeholder="Insert Release Year">
+          </div>
+      
+      
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <input id="input-nationality" type="text" class="form-control" placeholder="Insert Nationality">
+          </div>
+      
+      
+          <div class="col">
+            <input id="input-genre" type="text" class="form-control" placeholder="Insert Genre">
+          </div>
+
+          <div class="col">
+            <input id="input-url" type="text" class="form-control" placeholder="Insert image url">
+          </div>
+        </div>
+
+        
+      </form>
+      
+     <button id="boton-send" type="button" class="btn btn-secondary btn-sm"> Enviar </button>  
+    </div> -->
+<!-- </div> -->
 <div class="card" id="container-form">
   <p id="intro-form">¡Crea y guarda tus propias películas aquí!</p>
 <form>
+  <div class="form-row">
+    <div class="col">
+      <input id="input-url" type="text" class="form-control" placeholder="Escribe la url de la imagen">
+    </div>
+  </div>
   <div class="form-row">
     <div class="col">
       <input id="input-title" type="text" class="form-control" placeholder="Escribe un título">
@@ -188,11 +234,6 @@
   <div class="form-row">
     <div class="col">
       <input id="input-genre" type="text" class="form-control" placeholder="Escribe el género">
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="col">
-      <input id="input-url" type="text" class="form-control" placeholder="Escribe la url de la imagen">
     </div>
   </div>
   <div class="form-row">

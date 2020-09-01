@@ -27,12 +27,12 @@ class Professional {
 
 class Movie {
     //Implementacion del método constructor
-    constructor( title, releaseYear, nacionality, genre, picture) {
+    constructor( picture, title, releaseYear, nacionality, genre ) {
+      this.picture = picture;
       this.title = title;
       this.releaseYear = releaseYear;
       this.nacionality = nacionality;
       this.genre = genre;      
-      this.picture = picture;
     }
 }
 
@@ -317,12 +317,14 @@ showMovie = (num) => {
 
 $(function () {
   $("#boton-send").on("click", function(){
-    let peliNueva = new Movie ($("#input-title").val(), $("#input-release").val(), $("#input-nationality").val(), $("#input-genre").val(), $("#input-url").val())
+    let peliNueva = new Movie ($("#input-url").val(), $("#input-title").val(), $("#input-release").val(), $("#input-nationality").val(), $("#input-genre").val() )
     myIMDB.peliculas.push(peliNueva);
-    console.log(peliNueva);    
-    // $("#fotoNueva").attr("src", myIMDB.peliculas[10].picture);
-    $("#nuevoDiv").replaceWith("<div><img src='"+peliNueva.picture+"'  width='150' /></div>")
-    //$("#nuevoDiv").show();
+    console.log(peliNueva);
+    
+    $("#fotoNueva").attr("src", myIMDB.peliculas[10].picture);
+    $("#nuevoDiv").show();
+
+    $("#boton10").on("click", showMovie())
   });
 });
 
