@@ -119,3 +119,11 @@ body
 #mostrarPelis > i{
     padding-bottom: 15px;
 }
+
+#mostrarPelis > h6:nth-child(34){
+    padding-top: 12px;
+}
+
+#mostrarPelis > h6:nth-child(57){
+    padding-top: 12px;
+}
