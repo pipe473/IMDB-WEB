@@ -13,6 +13,7 @@
     <link rel="shortcut icon" type="image/png" href="./img/favIcon.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Wemov(i)e</title>
 </head>
 <body>
@@ -171,7 +172,7 @@
 
   <!-- ////////////// FORMULARIO /////////// -->
 
-  <div class="card" id="container-form">
+  <!-- <div class="card" id="container-form">
       <p id="intro-form">¡Crea y guarda tus propias películas aquí!</p>
     <form>
 
@@ -206,10 +207,44 @@
       </form>
       
      <button id="boton-send" type="button" class="btn btn-secondary btn-sm"> Enviar </button>  
+    </div> -->
+<!-- </div> -->
+<div class="card" id="container-form">
+  <p id="intro-form">¡Crea y guarda tus propias películas aquí!</p>
+<form>
+  <div class="form-row">
+    <div class="col">
+      <input id="input-title" type="text" class="form-control" placeholder="Escribe un título">
     </div>
+    <div class="form-row">
+    <div class="col">
+      <input id="input-release" type="text" class="form-control" placeholder="Escribe un año">
+    </div>
+  </div>
+  </div>
+  <div class="form-row">
+    <div class="col">
+      <input id="input-nationality" type="text" class="form-control" placeholder="Escribe país">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col">
+      <input id="input-genre" type="text" class="form-control" placeholder="Escribe el género">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col">
+      <input id="input-url" type="text" class="form-control" placeholder="Escribe la url de la imagen">
+    </div>
+  </div>
+  <div class="form-row">
+  <div class="col">
+    <button id="boton-send" type="button" class="btn btn-secondary btn-sm"> Enviar </button>  
+  </div>
+  </div>
 </div>
-
-
-
+</form>
+</div>
+</div>
 </body>
 </html>

@@ -127,3 +127,31 @@ body
 #mostrarPelis > h6:nth-child(57){
     padding-top: 12px;
 }
+
+#container-form > form > div:nth-child(5) > div > button{
+    margin-left: 16px;
+    margin-top: 18px;
+}
+
+#navbar > a{
+    font-size: 38px;
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+body{
+    display: grid;
+    justify-content: center;
+}
+
+#container-form{
+    display: grid;
+}
+#container{
+    justify-content: center;
+}
+/* 
+#container{
+    display: flex;
+    flex-direction: row;
+} */

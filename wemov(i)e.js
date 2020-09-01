@@ -302,11 +302,13 @@
   // let myIMDB = new IMDB([movie1, movie2, movie3, movie4, movie5, movie6, movie7, movie8, movie9, actor1Movie10]);
   
   $(function(){
-    $("#boton-send").click(function(){
+    $("#boton-send").on("click", function(){
       let peliNueva = new Movie ($("#input-title").val(), $("#input-release").val(), $("#input-nationality").val(), $("#input-genre").val(), $("#input-url").val())
+      console.log(peliNueva);
       myIMDB.peliculas.push(peliNueva)
       $("#fotoNueva").attr("src", myIMDB.peliculas[10].picture);
       $("#nuevoDiv").show();
     });
   })
+  
   
