@@ -30,7 +30,7 @@ body
     margin-bottom: 50px;
     height: 22em;
     margin-left: 3px;
-    background-color: rgba(48, 49, 46, 0.144);
+    background-color: rgba(48, 49, 46, 0.144) !important;
 }
 
 
