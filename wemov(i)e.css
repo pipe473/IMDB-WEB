@@ -1,8 +1,10 @@
 body 
 {
+    display: initial;
     background-image: linear-gradient(to right, #434343 0%, black 100%);
 
 }
+
 
 
 .navbar  
@@ -137,11 +139,6 @@ body
     font-size: 38px;
     padding-left: 50px;
     padding-top: 30px;
-}
-
-body{
-    display: grid;
-    justify-content: center;
 }
 
 #container-form{
